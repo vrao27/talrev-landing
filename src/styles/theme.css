@@ -1,0 +1,54 @@
+:root {
+  /* pulled from your logo  */
+  --talrev-bg: #2c555e; /* primary teal background */
+  --talrev-bg-dark: #1f3c42; /* darker teal */
+  --talrev-text: #e6ecee; /* light text */
+  --talrev-accent: #cfe3e7; /* subtle highlight */
+}
+
+/* Map to Bootstrap variables so default components pick it up */
+:root {
+  --bs-body-bg: var(--talrev-bg);
+  --bs-body-color: var(--talrev-text);
+  --bs-primary: var(--talrev-bg-dark);
+  --bs-secondary: var(--talrev-accent);
+  --bs-link-color: var(--talrev-accent);
+  --bs-link-hover-color: #ffffff;
+  --bs-border-color: rgba(255, 255, 255, 0.15);
+}
+
+/* Utility sections */
+.section {
+  padding: 4rem 0;
+}
+
+.section-alt {
+  background: var(--talrev-bg-dark);
+}
+
+.hero {
+  background: var(--talrev-bg);
+  padding: 4rem 0 3rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: var(--talrev-bg-dark);
+  border-color: var(--talrev-bg-dark);
+}
+.btn-primary:hover {
+  background-color: var(--talrev-text);
+  color: var(--talrev-bg);
+  border-color: var(--talrev-text);
+}
+
+/* Cards on dark bg */
+.card {
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--talrev-text);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+.card .card-title {
+  color: var(--talrev-accent);
+}
