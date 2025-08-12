@@ -113,3 +113,49 @@
   color: var(--talrev-bg-dark);
   border-color: #ffffff;
 }
+
+/* text and link uniformity */
+body {
+  background: var(--talrev-bg);
+  color: var(--talrev-text);
+}
+a {
+  text-decoration: none;
+}
+
+/* Navbar link contrast + active state */
+.navbar-dark .navbar-nav .nav-link {
+  color: rgba(255, 255, 255, 0.8);
+}
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link:focus {
+  color: #fff;
+}
+.navbar-dark .navbar-nav .nav-link.active {
+  color: var(--talrev-accent);
+}
+
+/* Card titles touch brightness*/
+.card .card-title {
+  color: var(--talrev-accent);
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .card-elevated,
+  .logo-3d {
+    transition: none;
+  }
+}
+
+/* Form help text / small text readable on dark */
+.form-text,
+small,
+.text-muted {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
