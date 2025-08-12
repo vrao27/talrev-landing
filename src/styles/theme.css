@@ -104,11 +104,12 @@
 
 /* Buttons */
 .btn-primary {
-  background-color: var(--talrev-bg-dark);
-  border-color: var(--talrev-bg-dark);
+  background-color: var(--talrev-accent);
+  color: var(--talrev-bg-dark);
+  border-color: var(--talrev-accent);
 }
 .btn-primary:hover {
-  background-color: var(--talrev-text);
-  color: var(--talrev-bg);
-  border-color: var(--talrev-text);
+  background-color: #ffffff;
+  color: var(--talrev-bg-dark);
+  border-color: #ffffff;
 }
