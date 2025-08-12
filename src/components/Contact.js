@@ -15,7 +15,7 @@ export default function Contact() {
         >
           {/* required for Netlify to identify this form */}
           <input type="hidden" name="form-name" value="contact" />
-          <input type="hidden" name="redirect" value="/thank-you.html" />
+          <input type="hidden" name="redirect" value="public/thank-you.html" />
 
           {/* Honeypot field (hidden) to reduce spam */}
           <p style={{ display: "none" }}>
