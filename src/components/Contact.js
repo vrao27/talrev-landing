@@ -3,7 +3,10 @@ export default function Contact() {
     <div className="row justify-content-center">
       <div className="col-lg-8">
         <h2 className="text-center mb-4">Contact</h2>
-        <form onSubmit={(e) => e.preventDefault()} className="card p-4">
+        <form
+          onSubmit={(e) => e.preventDefault()}
+          className="card form-card p-4"
+        >
           <div className="mb-3">
             <label htmlFor="name" className="form-label">
               Name
@@ -35,7 +38,7 @@ export default function Contact() {
               className="form-control"
               rows="4"
               placeholder="Tell us about your use case..."
-            ></textarea>
+            />
           </div>
           <button className="btn btn-primary">Send</button>
         </form>
