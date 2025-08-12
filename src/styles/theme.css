@@ -64,6 +64,19 @@
   border-color: rgba(255, 255, 255, 0.18);
 }
 
+/* logo design */
+.logo-3d {
+  filter: drop-shadow(0 14px 30px rgba(0, 0, 0, 0.45))
+    drop-shadow(0 4px 8px rgba(0, 0, 0, 0.25));
+  transform: perspective(900px) translateZ(0);
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+.logo-3d:hover {
+  transform: perspective(900px) translateZ(12px);
+  filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.55))
+    drop-shadow(0 6px 14px rgba(0, 0, 0, 0.35));
+}
+
 /* Buttons */
 .btn-primary {
   background-color: var(--talrev-bg-dark);
