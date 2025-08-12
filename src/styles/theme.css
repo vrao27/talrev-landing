@@ -20,10 +20,22 @@
 /* Utility sections */
 .section {
   padding: 4rem 0;
+  position: relative;
 }
-
+.section::after {
+  content: "";
+  position: absolute;
+  inset: auto 0 -1px 0;
+  height: 80px;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.15) 100%
+  );
+  pointer-events: none;
+}
 .section-alt {
-  background: var(--talrev-bg-dark);
+  background: linear-gradient(180deg, var(--talrev-bg-dark) 0%, #142528 100%);
 }
 
 .hero {
@@ -35,6 +47,21 @@
     linear-gradient(180deg, var(--talrev-bg) 0%, var(--talrev-bg-dark) 100%);
   padding: 4rem 0 3rem;
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* elevated card */
+.card-elevated {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.25), 0 2px 8px rgba(0, 0, 0, 0.15);
+  transition: transform 0.25s ease, box-shadow 0.25s ease,
+    border-color 0.25s ease;
+  backdrop-filter: blur(6px);
+}
+.card-elevated:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.35), 0 4px 12px rgba(0, 0, 0, 0.2);
+  border-color: rgba(255, 255, 255, 0.18);
 }
 
 /* Buttons */
@@ -49,6 +76,7 @@
 }
 
 /* Cards on dark bg */
+
 .card {
   background: rgba(255, 255, 255, 0.04);
   color: var(--talrev-text);
