@@ -20,7 +20,7 @@ function App() {
               height="110"
               className="mb-3 logo-3d"
             />
-            <span className="fw-semibold">Talrev</span>
+            <span className="fw-semibold"></span>
           </a>
           <button
             className="navbar-toggler"
