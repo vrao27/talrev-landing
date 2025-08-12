@@ -14,7 +14,12 @@ function App() {
       >
         <div className="container">
           <a className="navbar-brand d-flex align-items-center" href="#top">
-            <img src={logo} alt="Talrev" height="40" className="me-2" />
+            <img
+              src={logo}
+              alt="Talrev"
+              height="110"
+              className="mb-3 logo-3d"
+            />
             <span className="fw-semibold">Talrev</span>
           </a>
           <button
