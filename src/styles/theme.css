@@ -77,6 +77,31 @@
     drop-shadow(0 6px 14px rgba(0, 0, 0, 0.35));
 }
 
+/* Contact form accents + white inputs */
+.form-card {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.25);
+}
+.form-label {
+  color: var(--talrev-accent);
+}
+
+.form-control {
+  background-color: rgba(255, 255, 255, 0.06);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.form-control::placeholder {
+  color: rgba(255, 255, 255, 0.65);
+}
+.form-control:focus {
+  background-color: rgba(255, 255, 255, 0.09);
+  color: #fff;
+  border-color: var(--talrev-accent);
+  box-shadow: 0 0 0 0.2rem rgba(207, 227, 231, 0.25);
+}
+
 /* Buttons */
 .btn-primary {
   background-color: var(--talrev-bg-dark);
@@ -86,15 +111,4 @@
   background-color: var(--talrev-text);
   color: var(--talrev-bg);
   border-color: var(--talrev-text);
-}
-
-/* Cards on dark bg */
-
-.card {
-  background: rgba(255, 255, 255, 0.04);
-  color: var(--talrev-text);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-}
-.card .card-title {
-  color: var(--talrev-accent);
 }
