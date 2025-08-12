@@ -10,11 +10,12 @@ export default function Contact() {
           method="POST"
           data-netlify="true"
           netlify-honeypot="bot-field"
-          action="/thank-you.html"
+          action="/"
           className="card form-card p-4"
         >
           {/* required for Netlify to identify this form */}
           <input type="hidden" name="form-name" value="contact" />
+          <input type="hidden" name="redirect" value="/thank-you.html" />
 
           {/* Honeypot field (hidden) to reduce spam */}
           <p style={{ display: "none" }}>
