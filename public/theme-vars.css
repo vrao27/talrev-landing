@@ -1,0 +1,20 @@
+:root {
+  /* Talrev theme colors */
+  --talrev-bg: #2c555e;
+  --talrev-bg-dark: #1f3c42;
+  --talrev-text: #e6ebec;
+  --talrev-accent: #cfe3e7;
+
+  --bs-body-bg: var(--talrev-bg);
+  --bs-body-color: var(--talrev-text);
+  --bs-primary: var(--talrev-bg-dark);
+  --bs-secondary: var(--talrev-accent);
+  --bs-link-color: var(--talrev-accent);
+  --bs-link-hover-color: #ffffff;
+  --bs-border-color: rgba(255, 255, 255, 0.15);
+}
+
+body {
+  background-color: var(--talrev-bg);
+  color: var(--talrev-text);
+}
