@@ -2,7 +2,7 @@
   /* pulled from your logo  */
   --talrev-bg: #2c555e; /* primary teal background */
   --talrev-bg-dark: #1f3c42; /* darker teal */
-  --talrev-text: #e6ecee; /* light text */
+  --talrev-text: #e6ebec; /* light text */
   --talrev-accent: #cfe3e7; /* subtle highlight */
 }
 
@@ -27,7 +27,12 @@
 }
 
 .hero {
-  background: var(--talrev-bg);
+  background: radial-gradient(
+      1200px 600px at 50% 0%,
+      rgba(255, 255, 255, 0.06),
+      transparent 60%
+    ),
+    linear-gradient(180deg, var(--talrev-bg) 0%, var(--talrev-bg-dark) 100%);
   padding: 4rem 0 3rem;
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
