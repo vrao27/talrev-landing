@@ -1,5 +1,4 @@
 :root {
-  /* Talrev theme colors */
   --talrev-bg: #2c555e;
   --talrev-bg-dark: #1f3c42;
   --talrev-text: #e6ebec;
@@ -12,6 +11,11 @@
   --bs-link-color: var(--talrev-accent);
   --bs-link-hover-color: #ffffff;
   --bs-border-color: rgba(255, 255, 255, 0.15);
+
+  /*for non white card overide from bootstrap*/
+  --bs-card-bg: rgba(255, 255, 255, 0.06);
+  --bs-card-color: var(--talrev-text);
+  --bs-card-border-color: rgba(255, 255, 255, 0.15);
 }
 
 body {
