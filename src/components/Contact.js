@@ -10,7 +10,7 @@ export default function Contact() {
           method="POST"
           data-netlify="true"
           netlify-honeypot="bot-field"
-          action="/thank-you"
+          action="/thank-you.html"
           className="card form-card p-4"
         >
           {/* required for Netlify to identify this form */}
